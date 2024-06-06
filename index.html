@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b162ff4525.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <title>Warung Makmur</title>
+</head>
+<body>
+    <header id="header">Warung Makmur</header>
+    <main id="main">
+        <div id="menu">
+            <div class="menu-options" onclick="daftarPesanan('Nasi Goreng', 15000)">
+                <img src="images/nasi-goreng.png" alt="nasi-goreng" class="menu-images">
+                <p>Nasi Goreng</p>
+                <p class="prices">Rp15.000</p>
+            </div>
+            <div class="menu-options" onclick="daftarPesanan('Mie Goreng', 15000)">
+                <img src="images/mie-goreng.png" alt="mie-goreng" class="menu-images">
+                <p>Mie Goreng</p>
+                <p class="prices">Rp15.000</p>
+            </div>
+            <div class="menu-options" onclick="daftarPesanan('Kwetiaw Goreng', 15000)">
+                <img src="images/kwetiaw-goreng.png" alt="kwetiaw-goreng" class="menu-images">
+                <p>Kwetiaw Goreng</p>
+                <p class="prices">Rp15.000</p>
+            </div>
+            <div class="menu-options" onclick="daftarPesanan('Sate Ayam', 20000)">
+                <img src="images/sate-ayam.png" alt="sate-ayam" class="menu-images">
+                <p>Sate Ayam</p>
+                <span class="prices">Rp20.000</span>
+            </div>
+            <div class="menu-options" onclick="daftarPesanan('Es Teh', 5000)">
+                <img src="images/teh-tawar-transparent.png" alt="es-teh" class="menu-images">
+                <p>Es Teh</p>
+                <p class="prices">Rp5.000</p>
+            </div>
+            <div class="menu-options" onclick="daftarPesanan('Es Cendol', 7500)">
+                <img src="images/es-cendol-transparent.png" alt="es-cendol" class="menu-images">
+                <p>Es Cendol</p>
+                <p class="prices">Rp7.500</p>
+            </div>
+            <div class="menu-options" onclick="daftarPesanan('Es Kopi', 7500)">
+                <img src="images/kopi-transparent.png" alt="es-kopi" class="menu-images">
+                <p>Es Kopi</p>
+                <p class="prices">Rp7.500</p>
+            </div>
+            <div class="menu-options" onclick="daftarPesanan('Air Mineral', 3000)">
+                <img src="images/airMineral-transparent.png" alt="air-mineral" class="menu-images water">
+                <p>Air Mineral</p>
+                <p class="prices">Rp3.000</p>
+            </div>
+        </div>
+        <div id="check-out">
+            <h2 id="head-text">Pesanan:</h2>
+            <div id="check-out-order-layout">
+                <div id="check-out-order">
+                    <div class="orders">
+                        <ul id="order-items"></ul>
+                        <!-- <div id="order-icon-remove"><i class="fa-solid fa-xmark"></i></div>
+                        <p class="order-names"></p>
+                        <p class="order-prices"></p>
+                        <div class="order-amount">
+                            <div id="order-icon-minus"><i class="fa-solid fa-minus"></i></div>
+                            <div class="order-number"></div>
+                            <div id="order-icon-plus"><i class="fa-solid fa-plus"></i></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <p id="price">Total: Rp <span id="total"></span></p>
+            <button id="check-out-button" onclick="checkout()">Checkout</button>
+        </div>
+        <!-- <button id="check-out-button2" onclick="checkout()">Checkout</button> -->
+    </main>
+    <footer id="footer">© June 2024 Bebi Ahmad Janlinov XI-RPL</footer>
+</body>
+</html>
