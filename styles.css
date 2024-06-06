@@ -161,12 +161,12 @@ html, body {
     }
 
     #check-out-order-layout {
-        height: 90px;
+        height: 150px;
     }
 
     #menu {
         width: 100%;
-        height: 350px;
+        height: 265px;
         justify-content: center;
         margin: 10px 0 0;
         gap: 12px;
@@ -178,6 +178,7 @@ html, body {
     }
 
     .menu-options {
+        width: 90px;
         font-size: 9pt;
     }
 
